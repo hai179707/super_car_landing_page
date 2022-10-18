@@ -5,24 +5,21 @@ import { RiArrowUpLine } from 'react-icons/ri'
 
 const cx = classNames.bind(styles)
 
-function GoToTop({ position = 'right' }) {
-    if(position != 'right' && position != 'left') {
-        position = 'right'
-    }
+function GoToTop({ left }) {
 
     const goToTop = () => {
         document.documentElement.scrollTop = 0
     }
 
     return (
-        <div className={cx('wrapper', {[position]: position})} onClick={() => goToTop()}>
+        <div className={cx('wrapper', {left})} onClick={() => goToTop()}>
             <RiArrowUpLine />
         </div>
     );
 }
 
 GoToTop.propTypes = {
-    position: PropTypes.string
+    left: PropTypes.string
 }
 
 export default GoToTop;

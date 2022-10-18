@@ -1,0 +1,94 @@
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.content {
+    padding-top: 3.2rem;
+    padding-bottom: 4.8rem;
+    width: 200px;
+    margin-inline: auto;
+    position: relative;
+
+    .image {
+        width: 200px;
+    }
+
+    .card {
+        position: absolute;
+        width: 127px;
+
+        &.card-1 {
+            left: -7.4rem;
+            top: 9.4rem
+        }
+
+        &.card-2 {
+            right: -7.5rem;
+            top: 15.8rem;
+        }
+
+        &.card-3 {
+            left: -7.4rem;
+            bottom: 15.2rem;
+        }
+    }
+}
+
+.map {
+    max-width: initial;
+    width: 650px;
+    position: absolute;
+    top: 17.6rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    z-index: -1;
+
+    .image {
+        transform: rotate(-22deg);
+    }
+}
+
+@media (max-width: 1080px) {
+    .content {
+        width: 150px;
+
+        .image {
+            width: 150px;
+        }
+
+        .card {
+            width: 112px;
+    
+            &.card-1 {
+                left: -6.4rem;
+                top: 9.4rem
+            }
+    
+            &.card-2 {
+                right: -5.5rem;
+                top: 15.8rem;
+            }
+    
+            &.card-3 {
+                left: -6.4rem;
+                bottom: 8.2rem;
+            }
+        }
+    }
+
+    .map {
+        width: 450px;
+        top: 12.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .map {
+        width: 450px;
+        top: 12.8rem;
+        left: -4.8rem;
+    }
+}

@@ -1,14 +1,19 @@
-import classNames from "classnames/bind";
-import styles from './Home.module.scss';
-
-const cx = classNames.bind(styles)
-
+import { AboutSection, HomeSection, OfferSection, PopularSection } from "./components"
+import Featured from "./components/Featured";
+import Features from "./components/Features";
+import Logos from "./components/Logos";
 function Home() {
-    return ( 
-        <div className={cx('wrapper')}>
-            <h2>Home</h2>
-        </div>
-     );
+    return (
+        <>
+            <HomeSection />
+            <AboutSection />
+            <PopularSection />
+            <Features />
+            <Featured />
+            <OfferSection />
+            <Logos />
+        </>
+    );
 }
 
 export default Home;

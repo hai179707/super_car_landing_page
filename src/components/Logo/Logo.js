@@ -10,7 +10,7 @@ const cx = classNames.bind(styles)
 
 function Logo({large, className}) {
     return ( 
-        <Link to={config.routes.home} className={cx('logo', {large, [className]: className,})}>
+        <Link to={config.routes.home} className={cx('logo', {large, [className]: className})}>
            <RiSteeringLine className={cx('icon')} /> Elecar
         </Link>
      );

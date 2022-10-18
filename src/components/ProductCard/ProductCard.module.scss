@@ -1,0 +1,112 @@
+.wrapper {
+    position: relative;
+    width: 258px;
+    border-radius: 2rem;
+    background-color: var(--container-color);
+    padding: 3.2rem 2.4rem 2.4rem;
+    overflow: hidden;
+
+    .shape {
+        position: absolute;
+        top: -4rem;
+        left: -4rem;
+        width: 180px;
+        height: 180px;
+        filter: blur(64px);
+        background-color: rgba(55, 74, 109, 0.5);
+        border-radius: 50%;
+    }
+
+    .title, .subtitle, .image {
+        position: relative;
+    }
+
+    .title {
+        text-align: left;
+        font-size: var(--h2-font-size);
+        margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+        font-size: var(--normal-font-size);
+        color: var(--text-color);
+        font-weight: 400;
+    }
+
+    .image {
+        width: 180px;
+        margin: 1.2rem 0 2rem 3.2rem;
+        transition: .3s;
+    }
+
+    &:hover .image{
+        transform: translateX(-0.5rem);;
+    }
+
+    .car-data {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 0.8rem 2rem;
+        margin-bottom: 3.2rem;
+
+        .data {
+            display: inline-flex;
+            align-items: center;
+            column-gap: 0.8rem;
+            font-size: var(--smaller-font-size);
+            color: var(--white);
+
+            .icon {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .price {
+        font-size: var(--h3-font-size);
+    }
+
+    .button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: inline-block;
+        padding: 1.2rem 1.6rem;
+        border-radius: 1.6rem 0 1.6rem 0;
+        background-color: var(--primary-color);
+        color: var(--white);
+        cursor: pointer;
+        transition: .3s;
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            background-color: var(--primary-color-alt);
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .wrapper {
+        width: 228px;
+        border-radius: 1.6rem;
+
+        .image {
+            width: 160px;
+            margin: 1.2rem 0 2rem 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        width: 258px;
+        border-radius: 1.6rem;
+
+        .image {
+            margin: 1.2rem 0 2rem 3rem;
+        }
+    }
+}

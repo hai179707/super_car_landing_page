@@ -4,11 +4,11 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .scroll-header {
-  background-color: var(--body-color);
-  box-shadow: 0 2px 4px #030303;
+  background-color: rgba(17, 18, 19, 0.8);
 }
 
 .nav {

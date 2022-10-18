@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.content {
+    padding-top: 4.8rem;
+}
+
+.card {
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1080px) {
+    .wrapper {
+        margin-bottom: 4rem;
+    }
+}

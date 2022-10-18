@@ -1,0 +1,27 @@
+const images = {
+    home: require('~/assets/images/home.png'),
+    noImage: require('~/assets/images/no-image.png'),
+    about: require('~/assets/images/about.png'),
+    popular1: require('~/assets/images/popular1.png'),
+    popular2: require('~/assets/images/popular2.png'),
+    popular3: require('~/assets/images/popular3.png'),
+    popular4: require('~/assets/images/popular4.png'),
+    popular5: require('~/assets/images/popular5.png'),
+    features: require('~/assets/images/features.png'),
+    map: require('~/assets/images/map.svg').default,
+    offer: require('~/assets/images/offer.png'),
+    offerBg: require('~/assets/images/offer-bg.png'),
+    logo1: require('~/assets/images/logo1.png'),
+    logo2: require('~/assets/images/logo2.png'),
+    logo3: require('~/assets/images/logo3.png'),
+    logo4: require('~/assets/images/logo4.png'),
+    logo5: require('~/assets/images/logo5.png'),
+    logo6: require('~/assets/images/logo6.png'),
+    featured1: require('~/assets/images/featured1.png'),
+    featured2: require('~/assets/images/featured2.png'),
+    featured3: require('~/assets/images/featured3.png'),
+    featured4: require('~/assets/images/featured4.png'),
+    featured5: require('~/assets/images/featured5.png'),
+}
+
+export default images

@@ -1,0 +1,103 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 5%;
+
+  & > div {
+    flex: 20%;
+  }
+
+  .about {
+    flex: 25%;
+  }
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.title {
+  margin-bottom: 2.4rem;
+}
+
+.menu {
+  .links {
+    a {
+      color: var(--text-color);
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: var(--title-color);
+    }
+
+    .link + .link {
+      margin-top: 1.25rem;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    column-gap: 3rem;
+
+    a {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.copy {
+  text-align: center;
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  margin-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .content {
+    row-gap: 4rem;
+
+    & > div,
+    .about {
+      flex: 40%;
+    }
+  }
+
+  .copy {
+    margin-top: 8rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    row-gap: 4rem;
+
+    & > div,
+    .about {
+      flex: 100%;
+    }
+  }
+
+  .copy {
+    margin-top: 8rem;
+    padding-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+
+  .social-links {
+    a {
+      font-size: 2rem;
+    }
+  }
+
+  .copy {
+    margin-top: 7rem;
+  }
+}

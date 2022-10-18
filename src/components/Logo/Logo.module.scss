@@ -1,0 +1,25 @@
+.logo {
+  color: var(--title-color);
+  display: inline-flex;
+  column-gap: 0.25rem;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--primary-color-alt);
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  &.large {
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    column-gap: 0.7rem;
+
+    .icon {
+      font-size: 3.2rem;
+    }
+  }
+}

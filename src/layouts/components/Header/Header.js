@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { RiCloseFill, RiMenu4Fill } from "react-icons/ri";
 
 import styles from './Header.module.scss'
-import Logo from "./Logo"
+import Logo from "~/components/Logo"
 import MenuItem from "./MenuItem"
 import { MENU_ITEMS } from "./MenuItemList"
 

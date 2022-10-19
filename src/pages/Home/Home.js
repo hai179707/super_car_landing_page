@@ -1,17 +1,14 @@
-import { AboutSection, HomeSection, OfferSection, PopularSection } from "./components"
-import Featured from "./components/Featured";
-import Features from "./components/Features";
-import Logos from "./components/Logos";
+import { AboutSection, FeaturedSection, FeaturesSection, HomeSection, LogosSection, OfferSection, PopularSection } from "./components"
 function Home() {
     return (
         <>
             <HomeSection />
             <AboutSection />
             <PopularSection />
-            <Features />
-            <Featured />
+            <FeaturesSection />
+            <FeaturedSection />
             <OfferSection />
-            <Logos />
+            <LogosSection />
         </>
     );
 }

@@ -3,9 +3,9 @@ import classNames from "classnames/bind"
 import images from "~/assets/images"
 import Image from "~/components/Image"
 import Section from "~/components/Section"
-import ScrollReveal from "~/components/ScrollReveal";
+import ScrollReveal from "~/components/ScrollReveal"
 import styles from './About.module.scss'
-import DataCard from "~/components/DataCard";
+import DataCard from "~/components/DataCard"
 
 const cx = classNames.bind(styles)
 
@@ -34,4 +34,4 @@ function About() {
     );
 }
 
-export default About;
+export default About

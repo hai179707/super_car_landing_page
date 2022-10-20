@@ -15,7 +15,7 @@ const cx = classNames.bind(styles)
 function Popular() {
     return (
         <Section>
-            <div id="popular">
+            <div id="popular" >
                 <h2 className={cx('title')}>Choose Your Electric Car <br />
                     Of The Porsche Brand
                 </h2>
@@ -51,4 +51,4 @@ function Popular() {
     );
 }
 
-export default Popular;
+export default Popular

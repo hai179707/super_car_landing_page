@@ -3,7 +3,7 @@ import classNames from "classnames/bind"
 import images from "~/assets/images"
 import Image from "~/components/Image"
 import Section from "~/components/Section"
-import ScrollReveal from "~/components/ScrollReveal";
+import ScrollReveal from "~/components/ScrollReveal"
 import styles from './Offer.module.scss'
 
 const cx = classNames.bind(styles)
@@ -31,4 +31,4 @@ function Offer() {
     );
 }
 
-export default Offer;
+export default Offer

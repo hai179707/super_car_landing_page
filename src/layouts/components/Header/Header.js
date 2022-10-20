@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types'
 import classNames from "classnames/bind"
 import { useEffect, useState } from "react"
-import { RiCloseFill, RiMenu4Fill } from "react-icons/ri";
+import { RiCloseFill, RiMenu4Fill } from "react-icons/ri"
 
 import styles from './Header.module.scss'
 import Logo from "~/components/Logo"
@@ -13,7 +13,7 @@ const cx = classNames.bind(styles)
 function Header() {
     const [scrollHeader, setScrollHeader] = useState(false)
     const [showMenu, setShowMenu] = useState(false)
-    
+
     useEffect(() => {
         const scrollHeader = () => {
             if (window.scrollY >= 50) {
@@ -32,12 +32,12 @@ function Header() {
     }, [])
 
     return (
-        <div className={cx('header', {'scroll-header': scrollHeader})}>
+        <div className={cx('header', { 'scroll-header': scrollHeader })}>
             <nav className={cx('container', 'nav')}>
                 <Logo />
-                <div className={cx('menu', {'show-menu': showMenu})}>
+                <div className={cx('menu', { 'show-menu': showMenu })}>
                     {MENU_ITEMS.map((item, index) => (
-                        <MenuItem key={index} name={item.name} path={item.path} active={item.active} />
+                        <MenuItem key={index} name={item.name} path={item.path} defaultActive={item.defaultActive} />
                     ))}
                     <div className={cx('close')} onClick={() => setShowMenu(false)}><RiCloseFill /></div>
                 </div>

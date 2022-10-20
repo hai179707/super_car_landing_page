@@ -2,7 +2,7 @@ export const MENU_ITEMS = [
     {
         name: 'Home',
         path: '#home',
-        active: true
+        defaultActive: true
     },
     {
         name: 'About',

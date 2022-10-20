@@ -2,7 +2,7 @@ import images from "~/assets/images";
 
 export const FEATURE_CARS = [
     {
-        id: 1,
+        id: 6,
         brand: 'Tesla',
         name: 'Model X',
         image: images.featured1,
@@ -12,7 +12,7 @@ export const FEATURE_CARS = [
         price: '$98,900'
     },
     {
-        id: 2,
+        id: 7,
         brand: 'Tesla',
         name: 'Model 3',
         image: images.featured2,
@@ -22,7 +22,7 @@ export const FEATURE_CARS = [
         price: '$45,900'
     },
     {
-        id: 3,
+        id: 8,
         brand: 'Audi',
         name: 'E-tron',
         image: images.featured3,
@@ -32,7 +32,7 @@ export const FEATURE_CARS = [
         price: '$175,900'
     },
     {
-        id: 4,
+        id: 9,
         brand: 'Porsche',
         name: 'Boxster 987',
         image: images.featured4,
@@ -42,7 +42,7 @@ export const FEATURE_CARS = [
         price: '$126,900'
     },
     {
-        id: 5,
+        id: 10,
         brand: 'Porsche',
         name: 'Panamera',
         image: images.featured5,

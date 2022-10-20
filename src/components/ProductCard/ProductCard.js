@@ -9,7 +9,7 @@ const cx = classNames.bind(styles)
 
 function ProductCard({ data, full = false, className }) {
     const onBtnAddToCardClick = (id) => {
-        console.log('Do something witd product id: ', id)
+        console.log('Do something with product id: ', id)
     }
 
     return (

@@ -6,10 +6,16 @@ import Image from "~/components/Image"
 import Section from "~/components/Section"
 import ScrollReveal from "~/components/ScrollReveal";
 import styles from './Home.module.scss'
+import { Link } from "react-router-dom"
 
 const cx = classNames.bind(styles)
 
 function Home() {
+    const onBtnStartClick = () => {
+        const aboutSection = document.getElementById('about').closest('.section')
+        aboutSection.scrollIntoView()
+    }
+
     return (
         <Section>
             <div className={cx('wrapper')} id='home'>
@@ -38,7 +44,7 @@ function Home() {
                         <div className={cx('text')}>BATTERY</div>
                     </ScrollReveal>
                 </div>
-                <ScrollReveal delay={1000} origin='bottom'><a href="#about" className={cx('button')}>START</a></ScrollReveal>
+                <ScrollReveal delay={1000} origin='bottom'><Link className={cx('button')} onClick={onBtnStartClick}>START</Link></ScrollReveal>
             </div>
         </Section>
     );

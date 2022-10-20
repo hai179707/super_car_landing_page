@@ -1,4 +1,5 @@
 import classNames from "classnames/bind"
+import { Link } from "react-router-dom"
 
 import images from "~/assets/images"
 import Image from "~/components/Image"
@@ -9,6 +10,10 @@ import styles from './Offer.module.scss'
 const cx = classNames.bind(styles)
 
 function Offer() {
+    const onSubscribeBtnClick = () => {
+        console.log('Subscribe Now')
+    }
+
     return (
         <Section>
             <div className={cx('wrapper')} id="offer">
@@ -21,7 +26,7 @@ function Offer() {
                     <p className={cx('descrition')}>
                         Be the first to receive all the information about our products and new cars by email by subscribing to our mailing list.
                     </p>
-                    <a href="#home" className={cx('button')}>Subscribe Now</a>
+                    <Link className={cx('button')} onClick={onSubscribeBtnClick}>Subscribe Now</Link>
                 </ScrollReveal>
                 <ScrollReveal origin="right" className={cx('right-group')}>
                     <Image src={images.offer} alt='offer image' className={cx('image')} />

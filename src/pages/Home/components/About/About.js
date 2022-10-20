@@ -1,4 +1,5 @@
 import classNames from "classnames/bind"
+import { Link } from "react-router-dom"
 
 import images from "~/assets/images"
 import Image from "~/components/Image"
@@ -10,6 +11,11 @@ import DataCard from "~/components/DataCard"
 const cx = classNames.bind(styles)
 
 function About() {
+    const onKnowMoreBtnClick = () => {
+        const popularSection = document.getElementById('popular').closest('.section')
+        popularSection.scrollIntoView()
+    }
+
     return (
         <Section>
             <div className={cx('wrapper')} id='about'>
@@ -27,7 +33,7 @@ function About() {
                     <p className={cx('descrition')}>
                         See the future with high-performance electric cars produced by renowned brands. They feature futuristic builds and designs with new and innovative platforms that last a long time.
                     </p>
-                    <a href="#popular" className={cx('button')}>Know more</a>
+                    <Link className={cx('button')} onClick={onKnowMoreBtnClick} >Know more</Link>
                 </ScrollReveal>
             </div>
         </Section>

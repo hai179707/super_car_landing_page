@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const cx = classNames.bind(styles)
 
-function MenuItem({ name, path, defaultActive }) {
+function MenuItem({ name, path, defaultActive, onClick }) {
     const [active, seActive] = useState(defaultActive)
 
     useEffect(() => {
@@ -32,6 +32,7 @@ function MenuItem({ name, path, defaultActive }) {
     })
 
     const onNavLinkClick = () => {
+        onClick()
         if(name === 'Home') {
             document.documentElement.scrollTop = 0
         }

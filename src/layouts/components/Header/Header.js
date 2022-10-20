@@ -31,13 +31,17 @@ function Header() {
         }
     }, [])
 
+    const onNavLinkClick = () => {
+        setShowMenu(false)
+    }
+
     return (
         <div className={cx('header', { 'scroll-header': scrollHeader })}>
             <nav className={cx('container', 'nav')}>
                 <Logo />
                 <div className={cx('menu', { 'show-menu': showMenu })}>
                     {MENU_ITEMS.map((item, index) => (
-                        <MenuItem key={index} name={item.name} path={item.path} defaultActive={item.defaultActive} />
+                        <MenuItem key={index} name={item.name} path={item.path} defaultActive={item.defaultActive} onClick={onNavLinkClick} />
                     ))}
                     <div className={cx('close')} onClick={() => setShowMenu(false)}><RiCloseFill /></div>
                 </div>

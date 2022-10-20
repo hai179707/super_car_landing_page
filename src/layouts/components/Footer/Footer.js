@@ -45,9 +45,9 @@ function Footer() {
                 <ScrollReveal delay={700}>
                     <FooterMenu title="Follow us">
                         <ul className={cx('links', 'social-links')}>
-                            <li><a href="https://facebook.com/" target={'_blank'}><RiFacebookFill /></a></li>
-                            <li><a href="https://www.instagram.com/" target={'_blank'}><RiInstagramLine /></a></li>
-                            <li><a href="https://twitter.com/" target={'_blank'}><RiTwitterLine /></a></li>
+                            <li><a href="https://facebook.com/" target={'_blank'}  rel="noreferrer"><RiFacebookFill /></a></li>
+                            <li><a href="https://www.instagram.com/" target={'_blank'} rel="noreferrer"><RiInstagramLine /></a></li>
+                            <li><a href="https://twitter.com/" target={'_blank'} rel="noreferrer"><RiTwitterLine /></a></li>
                         </ul>
                     </FooterMenu>
                 </ScrollReveal>

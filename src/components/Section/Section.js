@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function Section({ children }) {
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper', 'section')}>
             <div className={cx('container')}>
                 {children}
             </div>

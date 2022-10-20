@@ -3,6 +3,7 @@ import classNames from "classnames/bind"
 
 import styles from '../Header.module.scss'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const cx = classNames.bind(styles)
 
@@ -12,10 +13,10 @@ function MenuItem({ name, path, defaultActive }) {
     useEffect(() => {
         const handleActiveMenu = () => {
             const scrollY = window.pageYOffset
-            const section = document.getElementById(name.toLowerCase())
+            const section = document.getElementById(name.toLowerCase()).parentElement
             const sectionTop = section.offsetParent.offsetTop - 150
             const sectionHeight = section.offsetParent.offsetHeight
-            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                 seActive(true)
             }
             else {
@@ -30,9 +31,19 @@ function MenuItem({ name, path, defaultActive }) {
         }
     })
 
+    const onNavLinkClick = () => {
+        if(name === 'Home') {
+            document.documentElement.scrollTop = 0
+        }
+        else {
+            const section = document.getElementById(name.toLowerCase()).closest('.section')
+            section.scrollIntoView()
+        }
+    }
+
     return (
         <div className={cx('item')}>
-            <a href={path} className={cx('link', { 'active': active })}>{name}</a>
+            <Link to={path} className={cx('link', { 'active': active })} onClick={onNavLinkClick}>{name}</Link>
         </div>
     );
 }

@@ -1,19 +1,19 @@
 export const MENU_ITEMS = [
     {
         name: 'Home',
-        path: '#home',
+        path: '/',
         defaultActive: true
     },
     {
         name: 'About',
-        path: '#about'
+        path: '/'
     },
     {
         name: 'Popular',
-        path: '#popular'
+        path: '/'
     },
     {
         name: 'Featured',
-        path: '#featured'
+        path: '/'
     },
 ]
